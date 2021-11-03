@@ -22,7 +22,7 @@ $query = mysqli_query($con, "SELECT * FROM tabel_jenis_pelayanan");
 		<div class="card">
 		<H2 align="center">Tambah Pasien</H2>
 		<div class="card-body">
-			<form class="row g-3" action="add.php" method="post" name="form1">
+			<form class="row g-3" action="add.php" method="post" name="form1">   
 			  <div class="col-md-12">
 			    <label for="noPasien" class="form-label">Nomor Pasien</label>
 			    <input type="text" class="form-control"  name="nomor_pasien" placeholder="" required>
