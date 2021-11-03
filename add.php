@@ -7,7 +7,7 @@ $tgl = date ('d F Y');
 $query = mysqli_query($con, "SELECT * FROM tabel_jenis_pelayanan");
 /*$result = $con->query($sql);*/
 ?>
-
+  
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,7 +1,7 @@
 <?php
 
 $con = new mysqli("localhost","root", "","pasien_hilda");
-
+  
   if(isset($_POST['delete'])) {
       $id=$_POST['id'];
       

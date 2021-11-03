@@ -2,7 +2,7 @@
 error_reporting(0);
 $con = new mysqli("localhost", "root", "", "pasien_hilda");
 
-$tgl = date('d F Y');
+$tgl = date('d F Y');   
 $id = $_GET['id'];
 $query = mysqli_query($con, "SELECT * FROM tabel_pasien where id = '$id'");
 $isi = $query->fetch_assoc();
@@ -11,7 +11,7 @@ if ($isi['jenis_pelayanan'] == 1) {
 } else if ($isi['jenis_pelayanan'] == 2) {
   $js = 'BPJS';
 } else if ($isi['jenis_pelayanan'] == 3) {
-  $js = 'JAMKESMAS';
+  $js = 'JAMKESMAS'; 
 } else {
   $js = 'Jenis Pelayanan Tidak Terdaftar';
 }
